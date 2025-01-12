@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>研修スケジュール削除</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>研修スケジュール削除</h1>
+    <nav>
+        <a href="dashboard.html">ホーム</a> |
+        <a href="course_detail.html">研修コース</a> |
+        <a href="daily_report.html">日報</a> |
+        <a href="material_viewer.html">教材ライブラリ</a> |
+        <a href="mypage.html">マイページ</a>
+    </nav>
+</header>
+    <div class="container">
+        <div class="section">
+            <h2>研修スケジュールの削除</h2>
+            <form id="deleteTrainingScheduleForm">
+                <div class="input-group">
+                    <label for="training">削除する研修を選択</label>
+                    <select id="training" required>
+                        <option value="">研修を選択してください</option>
+                        <!-- 研修スケジュールからのオプションをここに追加 -->
+                    </select>
+                </div>
+                <button type="submit">スケジュールを削除</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>会社情報 | 利用規約 | プライバシーポリシー | お問い合わせ | 著作権表示</p>
+    </footer>
+</body>
+</html>
