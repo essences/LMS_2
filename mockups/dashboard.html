@@ -3,50 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ダッシュボード</title>
     <link rel="stylesheet" href="styles.css">
+    <title>ダッシュボード</title>
 </head>
 <body>
     <header>
-        <h1>学習管理システム</h1>
-        <nav>
-            <a href="dashboard.html">ホーム</a> |
-            <a href="course_detail.html">研修コース</a> |
-            <a href="daily_report.html">日報</a> |
-            <a href="material_viewer.html">教材ライブラリ</a> |
-            <a href="mypage.html">マイページ</a>
-        </nav>
+        <h1>ロゴ</h1>
+        <p>ログイン中のロール: <span id="user-role">管理者</span></p>
     </header>
-    <div class="container">
-        <div class="section" style="background-color: #e9f7ef;">
-            <h2>進行中のコース</h2>
-            <p><strong>コース名:</strong> Web開発入門</p>
-            <p><strong>進捗率:</strong> 50%</p>
-            <p><strong>残り日数:</strong> 10日</p>
-            <p><strong>ステータス:</strong> 進行中</p>
-        </div>
-        <div class="section">
-            <h2>お知らせ</h2>
-            <p>タイトル: 新しい教材が追加されました</p>
-            <p>日付: 2023-10-01</p>
-            <p>重要度: 高</p>
-            <p>既読/未読: 未読</p>
-        </div>
-        <div class="section">
-            <h2>本日のタスク</h2>
-            <p>タスク名: レポート提出</p>
-            <p>締切時間: 17:00</p>
-            <p>優先度: 高</p>
-        </div>
-        <div class="section">
-            <h2>最近の活動履歴</h2>
-            <p>活動種類: コース完了</p>
-            <p>日時: 2023-09-30</p>
-            <p>詳細リンク: <a href="#">詳細を見る</a></p>
-        </div>
-    </div>
+    <main>
+        <h2>ダッシュボード</h2>
+        <section>
+            <h3>進行中のコース</h3>
+            <ul>
+                <li>コース名1 - 進捗率: 70% (講師: 山田)</li>
+                <li>コース名2 - 進捗率: 50% (講師: 佐藤)</li>
+                <li>コース名2 - 進捗率: 50%</li>
+            </ul>
+        </section>
+        <section>
+            <h3>本日のタスク</h3>
+            <ul>
+                <li>タスク1 - 締切: 12:00</li>
+                <li>タスク2 - 締切: 15:00</li>
+            </ul>
+        </section>
+        <section>
+            <h3>お知らせ</h3>
+            <ul>
+                <li>お知らせ1 - 日付: 2023/10/01 - 重要度: 高 - 状態: 未読</li>
+                <li>お知らせ2 - 日付: 2023/10/02 - 重要度: 中 - 状態: 既読</li>
+                <li>お知らせ2 - 日付: 2023/10/02</li>
+            </ul>
+        </section>
+    </main>
     <footer>
-        <p>会社情報 | 利用規約 | プライバシーポリシー | お問い合わせ | 著作権表示</p>
+        <p>会社情報 | 利用規約 | プライバシーポリシー</p>
     </footer>
 </body>
 </html>
