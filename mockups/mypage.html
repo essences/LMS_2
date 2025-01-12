@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マイページ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #f8f9fa;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>マイページ</h1>
+    <nav>
+        <a href="dashboard.html">ホーム</a> |
+        <a href="course_detail.html">研修コース</a> |
+        <a href="daily_report.html">日報</a> |
+        <a href="material_viewer.html">教材ライブラリ</a> |
+        <a href="mypage.html">マイページ</a>
+    </nav>
+</header>
+    <div class="container">
+        <div class="section">
+            <h2>プロフィール情報</h2>
+            <p>名前: 山田太郎</p>
+            <p>メール: yamada@example.com</p>
+            <p>役割: 学習者</p>
+        </div>
+        <div class="section">
+            <h2>アカウント設定</h2>
+            <button type="button">パスワード変更</button>
+            <button type="button">メールアドレス変更</button>
+        </div>
+        <div class="section">
+            <h2>通知設定</h2>
+            <label><input type="checkbox" checked> メール通知を受け取る</label><br>
+            <label><input type="checkbox"> プッシュ通知を受け取る</label>
+        </div>
+    </div>
+    <footer>
+        <p>会社情報 | 利用規約 | プライバシーポリシー | お問い合わせ | 著作権表示</p>
+    </footer>
+</body>
+</html>
