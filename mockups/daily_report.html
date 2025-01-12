@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日報作成/編集</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #f8f9fa;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+        .input-group {
+            margin-bottom: 10px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-group input, .input-group textarea, .input-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>日報作成/編集</h1>
+    <nav>
+        <a href="dashboard.html">ホーム</a> |
+        <a href="course_detail.html">研修コース</a> |
+        <a href="daily_report.html">日報</a> |
+        <a href="material_viewer.html">教材ライブラリ</a> |
+        <a href="#">マイページ</a>
+    </nav>
+</header>
+    <div class="container">
+        <div class="section">
+            <h2>基本情報</h2>
+            <div class="input-group">
+                <label for="date">日付</label>
+                <input type="date" id="date" required>
+            </div>
+            <div class="input-group">
+                <label for="mood">気分</label>
+                <select id="mood" required>
+                    <option value="1">1 - 悪い</option>
+                    <option value="2">2 - やや悪い</option>
+                    <option value="3">3 - 普通</option>
+                    <option value="4">4 - やや良い</option>
+                    <option value="5">5 - 良い</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="health">体調</label>
+                <textarea id="health" rows="3"></textarea>
+            </div>
+        </div>
+        <div class="section">
+            <h2>業務報告</h2>
+            <div class="input-group">
+                <label for="report">本文</label>
+                <textarea id="report" rows="5" required></textarea>
+            </div>
+            <div class="input-group">
+                <label for="attachments">添付ファイル</label>
+                <input type="file" id="attachments" multiple>
+            </div>
+        </div>
+        <div class="section">
+            <h2>公開設定</h2>
+            <div class="input-group">
+                <label for="visibility">公開範囲</label>
+                <select id="visibility">
+                    <option value="public">全体</option>
+                    <option value="group">グループ</option>
+                    <option value="private">非公開</option>
+                </select>
+            </div>
+        </div>
+        <div class="section">
+            <button type="button">保存</button>
+            <button type="button">キャンセル</button>
+        </div>
+    </div>
+    <footer>
+        <p>会社情報 | 利用規約 | プライバシーポリシー | お問い合わせ | 著作権表示</p>
+    </footer>
+</body>
+</html>

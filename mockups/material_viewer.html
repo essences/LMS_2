@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教材ビューア</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #f8f9fa;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+        .toc {
+            width: 20%;
+            border-right: 1px solid #ced4da;
+            padding-right: 10px;
+        }
+        .content {
+            width: 80%;
+            padding-left: 10px;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>教材ビューア</h1>
+    <nav>
+        <a href="dashboard.html">ホーム</a> |
+        <a href="course_detail.html">研修コース</a> |
+        <a href="daily_report.html">日報</a> |
+        <a href="material_viewer.html">教材ライブラリ</a> |
+        <a href="#">マイページ</a>
+    </nav>
+</header>
+    <div class="container">
+        <div class="toc">
+            <h2>目次</h2>
+            <ul>
+                <li>第1章: はじめに</li>
+                <li>第2章: HTMLの基礎</li>
+                <li>第3章: CSSの基礎</li>
+                <li>第4章: JavaScriptの基礎</li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="section">
+                <h2>教材タイトル: HTML入門</h2>
+                <p>種類: PDF</p>
+                <p>バージョン: 1.0</p>
+                <p>ページ番号: 1/10</p>
+            </div>
+            <div class="section">
+                <h2>コンテンツ</h2>
+                <p>ここに教材の内容が表示されます。</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>会社情報 | 利用規約 | プライバシーポリシー | お問い合わせ | 著作権表示</p>
+    </footer>
+</body>
+</html>
